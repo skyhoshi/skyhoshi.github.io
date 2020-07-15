@@ -1,6 +1,4 @@
 [
-  //JavaScript
-  //Custom Javascript
   {
     "outputFileName": "wwwroot/custom/site.min.js",
     "inputFiles": [
@@ -12,7 +10,6 @@
     },
     "sourceMap": false
   },
-  //Bootstrap
   {
     "inputFiles": [
       "wwwwroot/lib/bootstrap/dist/js/bootstrep.js"
@@ -25,15 +22,12 @@
     "outputFileName": "wwwroot/bootstrap/bootstrap.min.js"
 
   },
-  //CSS
-  //Custom CSS
   {
     "outputFileName": "wwwroot/custom/site.min.css",
     "inputFiles": [
       "wwwroot/custom/css/site.css"
     ]
   },
-  //Bootstrap
   {
     "outputFileName": "wwwroot/bootstrap/bootstrap.min.css",
     "inputFiles": [

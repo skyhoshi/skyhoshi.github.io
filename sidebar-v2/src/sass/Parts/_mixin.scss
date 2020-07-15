@@ -1,81 +1,83 @@
 @mixin themes ($sidebar-bg-color,
-$primary-color,
-$primary-highlight-color,
-$border-color,
-$submenu-bg-color,
-$menu-icon-bg-color,
-$menu-icon-color,
-$menu-icon-highlight-color,
-$menu-header-color,
-$search-input-bg-color,
-$footer-bg-color,
-$shadow-color,
-$scrollbar-color) {
-    .sidebar-wrapper {
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color) {
+    .header-wrapper {
+        .sidebar-wrapper {
 
-        background-color: $sidebar-bg-color;
+            background-color: $sidebar-bg-color;
 
-        .sidebar-item {
+            .sidebar-item {
 
-            border-top: 1px solid $border-color;
+               // border-top: 1px solid $border-color;
 
-            &:first-child {
-                border-top: none;
+                &:first-child {
+                    border-top: none;
+                }
             }
-        }
 
-        a:not(.dropdown-item),
-        .sidebar-header,
-        .sidebar-search input,
-        .sidebar-search i {
-            color: $primary-color;
-        }
+            a:not(.dropdown-item),
+            .sidebar-header,
+            .sidebar-search input,
+            .sidebar-search i {
+                color: $primary-color;
+            }
 
-        a:not(.dropdown-item):hover,
-        .sidebar-menu li.active>a {
-            color: $primary-highlight-color;
-        }
+            a:not(.dropdown-item):hover,
+            .sidebar-menu li.active>a {
+                color: $primary-highlight-color;
+            }
 
-        .sidebar-search input.search-menu,
-        .sidebar-search .input-group-text {
-            background-color: $search-input-bg-color;
-            border: none;
-            box-shadow: none;
-            margin-left: 1px;
-        }
+            .sidebar-search input.search-menu,
+            .sidebar-search .input-group-text {
+                background-color: $search-input-bg-color;
+                border: none;
+                box-shadow: none;
+                margin-left: 1px;
+            }
 
-        .sidebar-menu a:hover i,
-        .sidebar-menu a:hover:before,
-        .sidebar-menu li.active a i {
-            color: $menu-icon-highlight-color;
-            // text-shadow: 0px 0px 10px rgba($menu-icon-highlight-color, .5);
-        }
+            .sidebar-menu a:hover i,
+            .sidebar-menu a:hover:before,
+            .sidebar-menu li.active a i {
+                color: $menu-icon-highlight-color;
+                // text-shadow: 0px 0px 10px rgba($menu-icon-highlight-color, .5);
+            }
 
-        .sidebar-menu ul li a i {
-            background-color: $menu-icon-bg-color;
-        }
+            .sidebar-menu ul li a i {
+                background-color: $menu-icon-bg-color;
+            }
 
 
-        .sidebar-menu .sidebar-dropdown div {
-            background-color: $submenu-bg-color;
-        }
+            .sidebar-menu .sidebar-dropdown div {
+                background-color: $submenu-bg-color;
+            }
 
-        .sidebar-menu .header-menu span {
-            color: $menu-header-color;
-        }
+            .sidebar-menu .header-menu span {
+                color: $menu-header-color;
+            }
 
-        .sidebar-footer {
-            background-color: $footer-bg-color;
-            box-shadow: 0px -1px 5px $shadow-color;
-            border-top: 1px solid $border-color;
-        }
+            .sidebar-footer {
+                background-color: $footer-bg-color;
+                box-shadow: 0px -1px 5px $shadow-color;
+                border-top: 1px solid $border-color;
+            }
 
-        .sidebar-footer>div:first-child {
-            border-left: none;
-        }
+            .sidebar-footer>div:first-child {
+                border-left: none;
+            }
 
-        .sidebar-footer>div:last-child {
-            border-right: none;
+            .sidebar-footer>div:last-child {
+                border-right: none;
+            }
         }
     }
 
