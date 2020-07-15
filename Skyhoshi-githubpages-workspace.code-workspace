@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"command": "cd ${workspaceFolder};npm start;",
+				"name": "Run npm start",
+				"request": "launch",
+				"type": "node-terminal"
+			},
+			{
+				"type": "node",
+				"request": "launch",
+				"name": "Launch Program",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"program": "${file}"
+			}
+		]
+	}
+}

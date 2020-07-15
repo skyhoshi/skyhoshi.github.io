@@ -1,0 +1,38 @@
+﻿[
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/main.css",
+    "inputFile": "wwwroot/callScript/sass/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/all-sidebar-themes.css",
+    "inputFile": "wwwroot/callScript/sass/sidebar-themes.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/light-theme/light-theme.css",
+    "inputFile": "wwwroot/callScript/sass/light-theme/light-theme.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/ice-theme/ice-themes.css",
+    "inputFile": "wwwroot/callScript/sass/ice-theme/ice-themes.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/default-theme/default-themes.css",
+    "inputFile": "wwwroot/callScript/sass/default-theme/default-themes.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/cool-theme/cool-themes.css",
+    "inputFile": "wwwroot/callScript/sass/cool-theme/cool-themes.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/chiller-theme/chiller-themes.css",
+    "inputFile": "wwwroot/callScript/sass/chiller-theme/chiller-themes.scss"
+  },
+  {
+    "outputFile": "wwwroot/callScript/css/sidebar/legacy-theme/legacy-theme.css",
+    "inputFile": "wwwroot/callScript/sass/legacy-theme/legacy-theme.scss"
+  },
+  {
+    "outputFile": "wwwroot/dashboard/dashboard-nav.css",
+    "inputFile": "wwwroot/dashboard/scss/navigation.scss"
+  }
+]

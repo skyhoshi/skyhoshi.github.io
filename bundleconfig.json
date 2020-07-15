@@ -1,0 +1,50 @@
+[
+  //JavaScript
+  //Custom Javascript
+  {
+    "outputFileName": "wwwroot/custom/site.min.js",
+    "inputFiles": [
+      "wwwroot/custom/js/site.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  //Bootstrap
+  {
+    "inputFiles": [
+      "wwwwroot/lib/bootstrap/dist/js/bootstrep.js"
+    ],
+    "minify": {
+      "renameLocals": true,
+      "enabled": true,
+      "outputMode": "singleLine"
+    },
+    "outputFileName": "wwwroot/bootstrap/bootstrap.min.js"
+
+  },
+  //CSS
+  //Custom CSS
+  {
+    "outputFileName": "wwwroot/custom/site.min.css",
+    "inputFiles": [
+      "wwwroot/custom/css/site.css"
+    ]
+  },
+  //Bootstrap
+  {
+    "outputFileName": "wwwroot/bootstrap/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine",
+      "renameLocals": true
+    }
+  }
+]
