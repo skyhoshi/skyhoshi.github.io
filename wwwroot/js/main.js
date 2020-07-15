@@ -12,6 +12,7 @@ System.register(["./sidebar/sidebar"], function (exports_1, context_1) {
             window.onload = function () {
                 var application = new sidebar_1.sidebar();
                 application.init();
+                console.log("application initialized");
             };
         }
     };
