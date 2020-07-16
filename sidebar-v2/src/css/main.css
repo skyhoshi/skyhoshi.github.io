@@ -56,7 +56,13 @@
   width: 280px;
   height: 100vh;
   max-height: 100vh;
-  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   top: 0;
   z-index: 999;
   -webkit-transition: left .3s ease, width .3s ease;
@@ -156,7 +162,8 @@
 
 .header-wrapper .sidebar-wrapper .sidebar-user {
   padding: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 37px; }
   .header-wrapper .sidebar-wrapper .sidebar-user .user-pic {
     width: 60px;
     padding: 2px;
@@ -294,7 +301,6 @@
     right: 15px; }
 
 .header-wrapper .sidebar-wrapper .sidebar-footer {
-  position: absolute;
   width: 100%;
   bottom: 0;
   display: -webkit-box;
@@ -316,7 +322,6 @@
       -ms-flex-positive: 1;
       flex-grow: 1; }
     .header-wrapper .sidebar-wrapper .sidebar-footer > div a .notification {
-      position: absolute;
       top: 0; }
     .header-wrapper .sidebar-wrapper .sidebar-footer > div.pinned-footer {
       display: none; }
@@ -390,11 +395,9 @@
     border-radius: 50%;
     height: 8px;
     width: 8px;
-    position: absolute;
     top: 0; }
     .header-wrapper .sidebar-wrapper .sidebar-footer .badge-sonar:after {
       content: '';
-      position: absolute;
       top: 0;
       left: 0;
       border: 2px solid #d86703;
@@ -414,8 +417,9 @@ body {
 
 header {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0; }
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+  margin-right: 5px; }
 
 main {
   width: calc(100vw - 280px);

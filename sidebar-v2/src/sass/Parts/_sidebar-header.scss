@@ -41,17 +41,20 @@
                     }
                 }
             }
-            .sidebar-seperator{
+
+            .sidebar-seperator {
                 border: 1px solid #46454c;
-                padding:0px;
-                margin-left:-20px;
-                margin-right:-20px;
-                
+                padding: 0px;
+                margin-left: -20px;
+                margin-right: -20px;
+
             }
         }
+
         .sidebar-user {
             padding: 20px;
             overflow: hidden;
+            margin-bottom: 37px;
 
             .user-pic {
                 width: 60px;
@@ -90,12 +93,13 @@
                     }
                 }
             }
-            .sidebar-seperator{
+
+            .sidebar-seperator {
                 border: 1px solid #46454c;
-                padding:0px;
-                margin-left:-20px;
-                margin-right:-20px;
-                
+                padding: 0px;
+                margin-left: -20px;
+                margin-right: -20px;
+
             }
         }
     }

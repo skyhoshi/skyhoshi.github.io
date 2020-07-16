@@ -3,7 +3,9 @@
         width: $sidebar-width;
         height: 100vh;
         max-height: 100vh;
-        position: fixed;
+        display:flex;
+        flex-direction: column;
+        //position: fixed;
         top: 0;
         //left: -$sidebar-width;
         z-index: 999;
