@@ -8,6 +8,8 @@ body {
     display: flex;
 }
 
+
+
 header {
     flex: 1 1 0;
 }
@@ -210,7 +212,7 @@ main>article>header {
                 }
 
                 .sidebar-search input,
-                .sidebar-header .user-info,
+                .sidebar-user .user-info,
                 .sidebar-menu .header-menu,
                 .sidebar-menu .sidebar-submenu,
                 .sidebar-menu ul>li>a>span,
