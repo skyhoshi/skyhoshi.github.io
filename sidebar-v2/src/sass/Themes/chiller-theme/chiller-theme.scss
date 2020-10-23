@@ -1,0 +1,34 @@
+@import "../../Parts/mixin";
+
+
+.chiller-theme {
+
+    $sidebar-bg-color: #2A2C2B;
+    $primary-color: #D9CB9E;
+    $primary-highlight-color: #ffe79a;
+    $border-color: #374140;
+    $submenu-bg-color: #374140;
+    $menu-icon-bg-color: #374140;
+    $menu-icon-color: #D9CB9E;
+    $menu-icon-highlight-color: #ffbe00;
+    $menu-header-color: #a29464;
+    $search-input-bg-color: #374140;
+    $footer-bg-color: #374140;
+    $shadow-color: #2A2C2B;
+    $scrollbar-color: #525965;
+
+    @include themes($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
+}

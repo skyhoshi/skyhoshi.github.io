@@ -1,0 +1,44 @@
+[
+  {
+    "outputFileName": "wwwroot/custom/site.min.js",
+    "inputFiles": [
+      "wwwroot/custom/js/site.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "inputFiles": [
+      "wwwwroot/lib/bootstrap/dist/js/bootstrep.js"
+    ],
+    "minify": {
+      "renameLocals": true,
+      "enabled": true,
+      "outputMode": "singleLine"
+    },
+    "outputFileName": "wwwroot/bootstrap/bootstrap.min.js"
+
+  },
+  {
+    "outputFileName": "wwwroot/custom/site.min.css",
+    "inputFiles": [
+      "wwwroot/custom/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bootstrap/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine",
+      "renameLocals": true
+    }
+  }
+]

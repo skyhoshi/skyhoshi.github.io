@@ -1,0 +1,194 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es6.d.ts": {
+        "version": "721cec59c3fef87aaf480047d821fb758b3ec9482c4129a54631e6e25e432a31",
+        "signature": "721cec59c3fef87aaf480047d821fb758b3ec9482c4129a54631e6e25e432a31",
+        "affectsGlobalScope": false
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "signature": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "signature": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
+        "signature": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "signature": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "signature": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "signature": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "signature": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "signature": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "signature": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/jquery/jquerystatic.d.ts": {
+        "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
+        "signature": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/jquery/jquery.d.ts": {
+        "version": "c7e41611fca9dda55b40fdaabc0a2cb3b254517a8040515dcd7cb2bef67a065f",
+        "signature": "c7e41611fca9dda55b40fdaabc0a2cb3b254517a8040515dcd7cb2bef67a065f",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/jquery/misc.d.ts": {
+        "version": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc",
+        "signature": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/jquery/legacy.d.ts": {
+        "version": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
+        "signature": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/sizzle/index.d.ts": {
+        "version": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
+        "signature": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jquery/index.d.ts": {
+        "version": "83b41c4e728a2ebc360331cb09a235edf7fb3525ccabe8434ee0d9b61d4f4783",
+        "signature": "83b41c4e728a2ebc360331cb09a235edf7fb3525ccabe8434ee0d9b61d4f4783",
+        "affectsGlobalScope": false
+      },
+      "../typescript/sidebar/sidebar.ts": {
+        "version": "ed8c5dadddf753c219806fa93d47433a9acb2bfa6b339e6c91f30ab7359329e4",
+        "signature": "13cfcd8bca781aa1fd5f99f9b2d21026314e4153ff3c7db5566b12a3fa9d6cc8",
+        "affectsGlobalScope": false
+      },
+      "../typescript/main.ts": {
+        "version": "32816c7d631f5681ad34f7dcb3b6f47a8d1b6c7bcaa0d345dbc7f1fdbe083b0a",
+        "signature": "5cbf5a49df4c67d09feb8089c56c07b23d45da55f563f2c92c9979843c3836d2",
+        "affectsGlobalScope": true
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 2,
+      "module": 5,
+      "sourceMap": true,
+      "outDir": "./js",
+      "rootDir": "../typescript",
+      "removeComments": true,
+      "importHelpers": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "configFilePath": "../tsconfig.json"
+    },
+    "referencedMap": {
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ],
+      "../typescript/main.ts": [
+        "../typescript/sidebar/sidebar.ts"
+      ],
+      "../typescript/sidebar/sidebar.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.dom.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.es6.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../../../../../../programdata/scoop/persist/nodejs/bin/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../node_modules/@types/jquery/index.d.ts",
+      "../node_modules/@types/jquery/jquery.d.ts",
+      "../node_modules/@types/jquery/jquerystatic.d.ts",
+      "../node_modules/@types/jquery/legacy.d.ts",
+      "../node_modules/@types/jquery/misc.d.ts",
+      "../node_modules/@types/sizzle/index.d.ts",
+      "../typescript/main.ts",
+      "../typescript/sidebar/sidebar.ts"
+    ]
+  },
+  "version": "3.9.6"
+}
