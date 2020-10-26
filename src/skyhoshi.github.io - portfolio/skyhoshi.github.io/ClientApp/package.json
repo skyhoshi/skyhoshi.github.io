@@ -1,11 +1,11 @@
 {
-  "name": "skyhoshi.github.io___portfolio",
-  "version": "0.0.0",
+  "name": "skyhoshi.github.io.portfolio",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run skyhoshi.github.io___portfolio:server:dev",
+    "build:ssr": "ng run skyhoshi.github.io.portfolio:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -32,7 +32,7 @@
     "zone.js": "0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.26",
+    "@angular-devkit/build-angular": "^0.1002.0",
     "@angular/cli": "^8.3.26",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^8.2.12",
