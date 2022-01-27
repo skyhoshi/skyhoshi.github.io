@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Software Development Portfolio - Marcus Kern</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <style>
         body {
             display: flex;
@@ -24,6 +24,14 @@
             flex-direction: column;
         }
 
+        summary {
+            font-size: xx-large;
+        }
+
+        #ProjectName {
+            font-size: larger;
+        }
+
         footer {
             display: flex;
             flex-direction: row;
@@ -34,11 +42,11 @@
 <body class="fas">
     <nav class="nav" style="width: 75vw; max-height: max-content;">
         <header class="card-header text-success alert-success bg-white">
-            <h4 class="justify-content-between">Skyhoshi<br/>AKA<br/>Marcus Kern</h4>
+            <h4 class="justify-content-between">Skyhoshi<br />AKA<br />Marcus Kern</h4>
         </header>
-        <h6>Project List</h6>
+        <h6>Software Project List</h6>
         <ul class="list-group">
-            <li class="list-group-item list-group-item-action"><a href="#SecretCache">PowerShell - Secret Cache - Azure KeyVault Local Cache Manager</a></li>
+            <li class="list-group-item list-group-item-action"><a href="#SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a></li>
             <li class="list-group-item list-group-item-action"><a href="#ConfigurationManager">Configuration Manager - KeePass database storage</a></li>
             <li class="list-group-item list-group-item-action"><a href="#FaceRecognition">Face Recognition - In Dot Net</a></li>
             <li class="list-group-item list-group-item-action"><a href="#Webhook">Webhook Consumption and Response website</a></li>
@@ -46,206 +54,269 @@
             <li class="list-group-item list-group-item-action"><a href="#WinGet">WinGet</a></li>
             <li class="list-group-item list-group-item-action"><a href="#TimeMarker">Skyhoshi.App.TimeMarker</a></li>
         </ul>
+        <h6>Game Development List</h6>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action"><a href="#"><span>Unity - <span>Steam Game Slot Picker</span> - "Next Game" Chooser</span></a></li>
+            <li class="list-group-item list-group-item-action"><a href="#"></a></li>
+            <li class="list-group-item list-group-item-action"><a href="#"></a></li>
+            <li class="list-group-item list-group-item-action"><a href="#"></a></li>
+        </ul>
     </nav>
     <main role="main" class="card-columns">
-        <h1 class="card-header border-success content-success rounded shadow-lg p-3 mb-5 bg-white rounded ">Marcus Kern : Software Development Portfolio</h1>
+        <h1 class="card-header border-success content-success rounded shadow-lg p-3 mb-5 bg-white rounded ">Marcus Kern
+            : Software Development Portfolio</h1>
         <article class="text m-3">
             <p>
-                I'm a F.U.N. Guy (Functionally Useful Nerd). <br/>
-                I am the Definition of DevOps, I can Create the Automated Deadlock, Install it, put together the computer AND program it to lock you out of your house.<br/>
+                I'm a F.U.N. Guy (Functionally Useful Nerd). <br />
+                I am the Definition of DevOps, I can Create the Automated Deadlock, Install it, put together the
+                computer AND program it to lock you out of your house.<br />
             </p>
             <p>
-              I am a software engineer with 9+ years programming and application development experience in the Microsoft stack. Additional programming experience in C++, Cloud services, Linux and MAC OS X, IOS Applications.
+                I am a software engineer with 9+ years programming and application development experience in the
+                Microsoft stack. Additional programming experience in C++, Cloud services, Linux and MAC OS X, IOS
+                Applications.
             </p>
         </article>
-        <article id="Projects" role="doc-cover" class="d-none" style="display:none;">
-            <h2 class="d-none" style="display: none;">Project Table of Contents</h2>
-            <ul class="list-group list-group-horizontal d-none" class="display:none;">
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">1</span><a href="#SecretCache">PowerShell - Secret Cache - Azure KeyVault Local Cache Manager</a>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">1</span><a href="#ConfigurationManager">Configuration Manager - KeePass database storage</a>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">2</span><a href="#FaceRecognition">Face Recognition - In Dot Net</a>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">3</span><a href="#Webhook">Webhook Consumption and Response website</a>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">4</span><a href="#VHDXAutomation">Installation Displacement Powershell Module</a>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">5</span><a href="#WinGet">WinGet</a>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <span class="badge badge-primary badge-pill m-1">6</span><a href="#TimeMarker">Skyhoshi.App.TimeMarker</a>
-                </li>
-            </ul>
+        <article>
+            <details is="expand">
+                <summary>Project Info</summary>
+                <section>
+                    
+                </section>
+            </details>
         </article>
-        <article id="SecretCache" data-shortName="SecretCache" role="doc-chapter" class="card">
-            <h1 class="card-header"><a role="link" id="SecretCache">PowerShell - Secret Cache - Azure KeyVault Local Cache Manager</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://www.github.com/skyhoshi/">https://www.github.com/skyhoshi/</a></li>
-                    <li class="list-group-item">Additional Information: <a target="_blank" href=""></a></li>
-                </ul>
-            </section>
-            <section class="card-body">
-                <h3>Project Description</h3>
-                <p>Az.KeyVault Interface that allows you to cache results encrypted in Global session or local session (Set By Global Variable)</p>
-            </section>
+        <article id="SoftwareDevProjects">
+            <h3>Software Projects</h3>
+            <details id="SecretCache" data-shortName="SecretCache" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a>
+                </summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://www.github.com/skyhoshi/">https://www.github.com/skyhoshi/</a></li>
+                        <li class="list-group-item">Additional Information: <a target="_blank" href=""></a></li>
+                    </ul>
+                </section>
+                <section class="card-body">
+                    <h3>Project Description</h3>
+                    <p>Az.KeyVault Interface that allows you to cache results encrypted in Global session or local
+                        session (Set By Global Variable)</p>
+                </section>
+            </details>
+            <details id="ConfigurationManager" data-shortName="ConfigurationManager" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="ConfigurationManager">Configuration Manager – Keepass database storage</a></summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://www.github.com/skyhoshi/ConfigManager-Keepass">https://www.github.com/skyhoshi/ConfigManager-Keepass</a>
+                        </li>
+                        <li class="list-group-item">Additional Information: <a target="_blank" href="https://keepass.info">https://keepass.info</a></li>
+                    </ul>
+                </section>
+                <section class="card-body">
+                    <h3>Project Description</h3>
+                    <p>This Library represents early work on secrets management. It uses a keepass database as a secure
+                        store, (visit https://keepass.info for more information) </p>
+                    <p>The concept is a simple case of secret storage and programmatic access, you create a Keepass
+                        Database, store User/Application/System Secrets as entities within the database which can
+                        include
+                        nearly limitless amounts of additional data. (Limited by 3 things, One: File size (Load Time),
+                        Two:
+                        Storage Available, and Three: Search Method(s) Conditions) The application uses the search
+                        function
+                        built into the library to find the entities by name.</p>
+                    <p>My Customization allows you to call the configuration object like you’re used to. This returns
+                        the
+                        string object that is stored in the keepass database. If it’s not found in the keepass database
+                        it
+                        will look to local configuration files and storage methods included.</p>
+                    <p>
+                        <code>var SettingValue = Configuration.AppSetting[SettingsName]</code><br />
+                    </p>
+                    <p>The next version of the project has plans to implement the Microsoft.Extensions.Configuration
+                        library
+                        and allow loading and consumption of enumerated lists of settings files and locations, the
+                        keepass
+                        database will be included in that list. </p>
+                </section>
+            </details>
+            <details id="FaceRecognition" data-shortName="FaceRecognition" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="FaceRecognition">Face Recognition - In Dot Net</a>
+                </summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/FaceRecog-LiveCoding">https://github.com/skyhoshi/FaceRecog-LiveCoding</a>
+                        </li>
+                        <li class="list-group-item">Additional Information: <a target="_blank" href="https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app">https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="card-body p-2">
+                    <h3>Project Description</h3>
+                    <p>
+                        This Application was a demonstration of the Azure Cognitive services integration into a User
+                        Registration application developed for the Video series.
+                    </p>
+                    <p>
+                        The concept wrapped around having a Home Automated Door Deadbolt Lock and Eyehole Camera. When
+                        you presented yourself to the door, the automated door Deadbolt Lock application (not apart of
+                        this project) would take a picture, using Accord framework (http://accord-framework.net/) to
+                        locally identify if the picture had a face within it. When a face was found, the image would
+                        then be sent to an API (again Not apart of this project) that would then be sent off to Azure
+                        for recognition and categorization, if the face belonged to a registered group (Registered
+                        within Azure Cognitive Services Face-API) the API using that information would use that
+                        information to check the local registration to validate the authorization the user had to the
+                        entry way. If they were authorized the system would then send off a signal to unlock the door.
+                        Unauthorized users would be cataloged, and an email would be sent to be reviewed.
+                    </p>
+                </section>
+            </details>
+            <details id="Webhook" data-shortName="Webhook" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="Webhook">Webhook Consumption and Response website</a>
+                </summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/WebhookCap">https://github.com/skyhoshi/WebhookCap</a>
+                        </li>
+                        <!-- <li class="list-group-item">Additional Information: <a target="_blank" href=""></a></li> -->
+                    </ul>
+                </section>
+                <section class="card-body p-2">
+                    <h3>Project Description</h3>
+                    <p>This has been one of my latest development projects as of October 2020. This simple application
+                        has a UI Interface that has several features.</p>
+                </section>
+            </details>
+            <details id="VHDXAutomation" data-shortName="VHDXAutomation" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="VHDXAutomation">Installation Displacement Powershell
+                        Module</a></summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/VHDXToFolders">https://github.com/skyhoshi/VHDXToFolders</a>
+                        </li>
+                        <li class="list-group-item">Project Outline and additional information: <a target="_blank" href="https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965">https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="card-body p-2">
+                    <h3>Project Description</h3>
+                    <p>Development started in DiskPart Settings Text Files and now PowerShell 7 is used to manage all
+                        the things that
+                        Diskpart and a settings file would do. PowerShell 7 is required.
+                    </p>
+                    <p>
+                    <h5>The TLDWTR (Too Long and don’t want to read) Version:</h5>
+                    </p>
+                    <p>
+                        Concept is to displace application files from a higher performing hard drive to a lesser one.
+                        [SSD -> HDD (platter drive)] In other words,
+                        you can install an application using a VHDx File as the storage location in place of the folder
+                        using a Symbolic
+                        Link (Junction) and move the VHDx Around as needed to better manage storage and performance
+                        rather than
+                        uninstalling and reinstalling applications.</p>
+                    <p>
+                    <h6>History of the Project:</h6>
+                    </p>
+                    <p>
+                        This project was one of necessity. After 20+ years of collecting, developing and
+                        loosing/misplacing projects and
+                        source files, When Windows 7 ( + Windows Server 2008) presented the ability to create Virtual
+                        Machines. Virtual
+                        Hard drives became a standard in storing a lot of “Shared” data. I had virtual hard drives that
+                        I would attach
+                        and detach from virtual machines to do maintenance and installations. </p>
+                    <p>
+                        A few years ago with the introduction of Windows 10, Hyper-V and Hyper-V PowerShell Module I was
+                        able to script
+                        out the creation of Virtual Hard Drives and took the concept of sharing one step further by
+                        attaching these
+                        drives to folders (Folder Mounting). </p>
+                    <p>
+                    <h6>Theories and Practice:</h6>
+                    </p>
+                    <p>
+                        With this I could in theory, install games onto to my SSD drive but when I wasn’t playing the
+                        game but needed
+                        additional space on the then limited space of my SSD I could dismount and displace the VHD to a
+                        Cold storage
+                        Spindle based drive (lesser performing drive) or even push the drive up to network storage for
+                        archiving. </p>
+                    <p>
+                        I took the theory one step further when I started working for GiftCertificates.com and used the
+                        virtual hard
+                        drive storage process to section of projects and configurations in order to better my
+                        development performance
+                        and time spent between different projects all while managing the space, and what was presented
+                        to me at any
+                        given time in the work environment. </p>
+                    <p>
+                    <h6>Passing on the concept: </h6>
+                    </p>
+                    <p>
+                        I’ve taken my time to convert the large group of scripts and methods down to a concise and
+                        simple PowerShell
+                        Module that will allow you to take a given folder on your system with a virtual hard drive that
+                        is mounted to
+                        the folder but is stored separately. </p>
+                    <p>
+                        Currently the project is unfinished, but the base scripts needed to mount existing virtual hard
+                        drives at
+                        startup are present. The generation methods for creating the mounting config files and scripts
+                        are in the source
+                        but the automation of converting a given folder to a virtual hard drive backed storage folder is
+                        rather
+                        scattered and currently not included in the source due to liability reasons. (an issue that I
+                        ran into is
+                        corruption and deletion of files during moves, until I can ensure that this does not happen /
+                        cannot happen
+                        within my scripts I’ve left these out. I, myself am required to manually move important folders
+                        due to the
+                        scripts tenuous nature.)
+                    </p>
+                </section>
+            </details>
+            <details id="WinGet" data-shortName="WinGet" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="WinGet">WinGet</a></summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/winget-cli">https://github.com/skyhoshi/winget-cli</a>
+                        </li>
+                        <li class="list-group-item">Additional Information: <a target="_blank" href="https://github.com/microsoft/winget-cli/pull/503">https://github.com/microsoft/winget-cli/pull/503</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="card-body p-2">
+                    <h3>Project Description</h3>
+                    <p>I was attempting to add a feature [its currently incomplete] demonstrates ability to expand and
+                        conform to lesser known or weaker strength languages and architectures.</p>
+                </section>
+            </details>
+            <details id="TimeMarker" data-shortName="TimeMarker" role="doc-chapter" class="card">
+                <summary class="card-header"><a role="link" id="TimeMarker">Skyhoshi.App.TimeMarker</a></summary>
+                <section class="card-body p-2">
+                    <h4>Links</h4>
+                    <ul class="list-group m-1">
+                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/TimeMarker">https://github.com/skyhoshi/TimeMarker</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="card-body p-2">
+                    <h3>Project Description</h3>
+                    <p>An Application I developed to allow someone to use shortcut keys (HotKeys) to record timestamps
+                    </p>
+                </section>
+            </details>
         </article>
-        <article id="ConfigurationManager" data-shortName="ConfigurationManager" role="doc-chapter" class="card">
-            <h1 class="card-header"><a role="link" id="ConfigurationManager">Configuration Manager – Keepass database storage</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://www.github.com/skyhoshi/ConfigManager-Keepass">https://www.github.com/skyhoshi/ConfigManager-Keepass</a></li>
-                    <li class="list-group-item">Additional Information: <a target="_blank" href="https://keepass.info">https://keepass.info</a></li>
-                </ul>
-            </section>
-            <section class="card-body">
-                <h3>Project Description</h3>
-                <p>This Library represents early work on secrets management. It uses a keepass database as a secure
-                    store, (visit https://keepass.info for more information) </p>
-                <p>The concept is a simple case of secret storage and programmatic access, you create a Keepass
-                    Database, store User/Application/System Secrets as entities within the database which can include
-                    nearly limitless amounts of additional data. (Limited by 3 things, One: File size (Load Time), Two:
-                    Storage Available, and Three: Search Method(s) Conditions) The application uses the search function
-                    built into the library to find the entities by name.</p>
-                <p>My Customization allows you to call the configuration object like you’re used to. This returns the
-                    string object that is stored in the keepass database. If it’s not found in the keepass database it
-                    will look to local configuration files and storage methods included.</p>
-                <p>
-                    <code>var SettingValue = Configuration.AppSetting[SettingsName]</code><br/>
-                </p>
-                <p>The next version of the project has plans to implement the Microsoft.Extensions.Configuration library
-                    and allow loading and consumption of enumerated lists of settings files and locations, the keepass
-                    database will be included in that list. </p>
-            </section>
-        </article>
-        <article id="FaceRecognition" data-shortName="FaceRecognition" role="doc-chapter" class="card">
-            <h1 class="card-header"><a role="link" id="FaceRecognition">Face Recognition - In Dot Net</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/FaceRecog-LiveCoding">https://github.com/skyhoshi/FaceRecog-LiveCoding</a></li>
-                    <li class="list-group-item">Additional Information: <a target="_blank" href="https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app">https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app</a></li>
-                </ul>
-            </section>
-            <section class="card-body p-2">
-                <h3>Project Description</h3>
-                <p>
-                    This Application was a demonstration of the Azure Cognitive services integration into a User Registration application developed for the Video series.
-                </p>
-                <p>
-                    The concept wrapped around having a Home Automated Door Deadbolt Lock and Eyehole Camera. When you presented yourself to the door, the automated door Deadbolt Lock application (not apart of this project) would take a picture, using Accord framework (http://accord-framework.net/) to locally identify if the picture had a face within it. When a face was found, the image would then be sent to an API (again Not apart of this project) that would then be sent off to Azure for recognition and categorization, if the face belonged to a registered group (Registered within Azure Cognitive Services Face-API)  the API using that information would use that information to check the local registration to validate the authorization the user had to the entry way. If they were authorized the system would then send off a signal to unlock the door. Unauthorized users would be cataloged, and an email would be sent to be reviewed. 
-                </p>
-            </section>
-        </article>
-        <article id="Webhook" data-shortName="Webhook" role="doc-chapter" class="card">
-            <h1><a role="link" id="Webhook">Webhook Consumption and Response website</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/WebhookCap">https://github.com/skyhoshi/WebhookCap</a></li>
-                    <!-- <li class="list-group-item">Additional Information: <a target="_blank" href=""></a></li> -->
-                </ul>
-            </section>
-            <section class="card-body p-2">
-                <h3>Project Description</h3>
-                <p>This has been one of my latest development projects as of October 2020. This simple application has a UI Interface that has several features.</p>
-            </section>
-        </article>
-        <article id="VHDXAutomation" data-shortName="VHDXAutomation" role="doc-chapter" class="card">
-            <h1><a role="link" id="VHDXAutomation">Installation Displacement Powershell Module</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/VHDXToFolders">https://github.com/skyhoshi/VHDXToFolders</a></li>
-                    <li class="list-group-item">Project Outline and additional information: <a target="_blank" href="https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965">https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965</a></li>
-                </ul>
-            </section>
-            <section class="card-body p-2">
-                <h3>Project Description</h3>
-                <p>Development started in DiskPart Settings Text Files and now PowerShell 7 is used to manage all the things that
-                    Diskpart and a settings file would do. PowerShell 7 is required.
-                </p>
-                <p><h5>The TLDWTR (Too Long and don’t want to read) Version:</h5> </p>
-                <p>
-                    Concept is to displace application files from a higher performing hard drive to a lesser one. [SSD -> HDD (platter drive)] In other words,
-                    you can install an application using a VHDx File as the storage location in place of the folder using a Symbolic
-                    Link (Junction) and move the VHDx Around as needed to better manage storage and performance rather than
-                    uninstalling and reinstalling applications.</p>
-                <p>
-                <h6>History of the Project:</h6>
-                </p>
-                <p>
-                    This project was one of necessity. After 20+ years of collecting, developing and loosing/misplacing projects and
-                    source files, When Windows 7 ( + Windows Server 2008) presented the ability to create Virtual Machines. Virtual
-                    Hard drives became a standard in storing a lot of “Shared” data. I had virtual hard drives that I would attach
-                    and detach from virtual machines to do maintenance and installations. </p>
-                <p>
-                    A few years ago with the introduction of Windows 10, Hyper-V and Hyper-V PowerShell Module I was able to script
-                    out the creation of Virtual Hard Drives and took the concept of sharing one step further by attaching these
-                    drives to folders (Folder Mounting). </p>
-                <p>
-                    <h6>Theories and Practice:</h6></p>
-                <p>
-                    With this I could in theory, install games onto to my SSD drive but when I wasn’t playing the game but needed
-                    additional space on the then limited space of my SSD I could dismount and displace the VHD to a Cold storage
-                    Spindle based drive (lesser performing drive) or even push the drive up to network storage for archiving. </p>
-                <p>
-                    I took the theory one step further when I started working for GiftCertificates.com and used the virtual hard
-                    drive storage process to section of projects and configurations in order to better my development performance
-                    and time spent between different projects all while managing the space, and what was presented to me at any
-                    given time in the work environment. </p>
-                <p>
-                    <h6>Passing on the concept: </h6></p>
-                <p>
-                    I’ve taken my time to convert the large group of scripts and methods down to a concise and simple PowerShell
-                    Module that will allow you to take a given folder on your system with a virtual hard drive that is mounted to
-                    the folder but is stored separately. </p>
-                <p>
-                    Currently the project is unfinished, but the base scripts needed to mount existing virtual hard drives at
-                    startup are present. The generation methods for creating the mounting config files and scripts are in the source
-                    but the automation of converting a given folder to a virtual hard drive backed storage folder is rather
-                    scattered and currently not included in the source due to liability reasons. (an issue that I ran into is
-                    corruption and deletion of files during moves, until I can ensure that this does not happen / cannot happen
-                    within my scripts I’ve left these out. I, myself am required to manually move important folders due to the
-                    scripts tenuous nature.)
-                </p>
-            </section>
-        </article>
-        <article id="WinGet" data-shortName="WinGet" role="doc-chapter" class="card">
-            <h1><a role="link" id="WinGet">WinGet</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/winget-cli">https://github.com/skyhoshi/winget-cli</a></li>
-                    <li class="list-group-item">Additional Information: <a target="_blank" href="https://github.com/microsoft/winget-cli/pull/503">https://github.com/microsoft/winget-cli/pull/503</a></li>
-                </ul>
-            </section>
-            <section class="card-body p-2">
-                <h3>Project Description</h3>
-                <p>I was attempting to add a feature [its currently incomplete] demonstrates ability to expand and conform to lesser known or weaker strength languages and architectures.</p>
-            </section>
-        </article>
-        <article id="TimeMarker" data-shortName="TimeMarker" role="doc-chapter" class="card">
-            <h1><a role="link" id="TimeMarker">Skyhoshi.App.TimeMarker</a></h1>
-            <section class="card-body p-2">
-                <h4>Links</h4>
-                <ul class="list-group m-1">
-                    <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/TimeMarker">https://github.com/skyhoshi/TimeMarker</a></li>
-                </ul>
-            </section>
-            <section class="card-body p-2">
-                <h3>Project Description</h3>
-                <p>An Application I developed to allow someone to use shortcut keys (HotKeys) to record timestamps </p>
-            </section>
+        <article id="GameDevProjects">
+            <h3>Game Dev Projects</h3>
+            <details>
+                <summary class="card-header"><span>Unity - <span>Steam Game Slot Picker</span> - "Next Game" Chooser</span></summary>
+            </details>
         </article>
     </main>
 
