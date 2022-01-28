@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-
+<html class="theme-light">
 <head>
+
     <meta charset="UTF-8">
-    <title>Software Development Portfolio - Marcus Kern</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Software Development Portfolio - Marcus Kern</title>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
+    <link href="content/css/bootstrap.css" rel="stylesheet" />
     <style>
         body {
             display: flex;
@@ -16,7 +18,6 @@
             flex-direction: column;
             min-height: 100vh;
             height: max-content;
-
         }
 
         main {
@@ -28,6 +29,15 @@
             font-size: xx-large;
         }
 
+            summary::marker {
+                content: "§ ";
+                padding-right: 4px;
+            }
+
+        #GameDevProjects > details > details > summary {
+            font-size: initial;
+        }
+
         #ProjectName {
             font-size: larger;
         }
@@ -37,58 +47,207 @@
             flex-direction: row;
         }
     </style>
+
+    <style>
+        .theme-light {
+            --color-primary: #0060df;
+            --color-secondary: #fbfbfe;
+            --background-color: #FFFFFF;
+            --background-accent-color: #e0e0e0;
+            --color-accent: #f0f0f0;
+            --font-color: #000000;
+            --btn-font-color: #FFFFFF
+        }
+
+        .theme-dark {
+            /*--color-primary: #17ed90;*/
+            --color-primary: #243133;
+            --color-secondary: #243133;
+            --background-color: #242433;
+            --background-accent-color: #7799ff;
+            --background-accent-color: #303030;
+            --color-accent: #12cdea;
+            --color-accent: #242424;
+            --font-color: #ffffff;
+            --btn-font-color: #FFFFFF
+        }
+
+        #switch {
+            /**/
+            color: var(--btn-font-color);
+            background: var(--color-primary);
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        body {
+            color: var(--font-color);
+            background-color: var(--background-color);
+        }
+        details {
+            background-color: var(--background-color);
+        }
+
+        details summary {
+            background-color: var(--color-secondary);
+        }
+
+        /*:hover {
+            background-color: var(--background-accent-color);
+        }*/
+        .list-group-item-action:hover {
+            background-color: var(--background-accent-color);
+        }
+
+
+        /*.card {
+            background-color: var(--color-accent) !important;
+        }*/
+
+        .card-header {
+            background-color: var(--color-secondary) !important;
+        }
+        .card-body {
+            background-color: var(--color-secondary) !important;
+        }
+        .list-group-item {
+            background-color: var(--color-accent);
+        }
+    </style>
+
+    <style>
+        /*details {
+            border-radius: 3px;
+            background: #EEE;
+        }
+
+        details summary {
+            font-size: 17px;
+            vertical-align: top;
+            background: #333;
+            color: #FFF;
+            border-radius: 3px;
+            padding: 5px 10px;
+            outline: none;
+        }
+
+        details[open] summary {
+            background: #69c773;
+            color: #333;
+        }*/
+
+        /* Hide the default marker. */
+        /*details summary::-webkit-details-marker {
+            display: none;
+        }*/
+
+        /* Add the custom marker in the default state. */
+        /*details summary:before {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            content: "";
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-icon-sprite.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }*/
+
+        /* Move the sprite image when the details box is open. */
+        /*details[open] summary:before {
+            background-position: -18px 0;
+        }*/
+    </style>
 </head>
 
 <body class="fas">
-    <nav class="nav" style="width: 75vw; max-height: max-content;">
+    <nav class="nav" style="width: 75vw;min-width:468px; max-height: max-content;">
         <header class="card-header text-success alert-success bg-white">
-            <h4 class="justify-content-between">Skyhoshi<br />AKA<br />Marcus Kern</h4>
+            <h4 class="text-center">Skyhoshi<br />AKA<br />Marcus Kern</h4>
         </header>
         <h6>Software Project List</h6>
         <ul class="list-group">
-            <li class="list-group-item list-group-item-action"><a href="#SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a></li>
-            <li class="list-group-item list-group-item-action"><a href="#ConfigurationManager">Configuration Manager - KeePass database storage</a></li>
-            <li class="list-group-item list-group-item-action"><a href="#FaceRecognition">Face Recognition - In Dot Net</a></li>
-            <li class="list-group-item list-group-item-action"><a href="#Webhook">Webhook Consumption and Response website</a></li>
-            <li class="list-group-item list-group-item-action"><a href="#VHDXAutomation">Installation Displacement Powershell Module</a></li>
-            <li class="list-group-item list-group-item-action"><a href="#WinGet">WinGet</a></li>
-            <li class="list-group-item list-group-item-action"><a href="#TimeMarker">Skyhoshi.App.TimeMarker</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-SecretCache" href="#SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-ConfigurationManager" href="#ConfigurationManager">Configuration Manager - KeePass database storage</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-FaceRecognition" href="#FaceRecognition">Face Recognition - In Dot Net</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-Webhook" href="#Webhook">Webhook Consumption and Response website</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-VHDXAutomation" href="#VHDXAutomation">Installation Displacement Powershell Module</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-Winget" href="#WinGet">WinGet</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-TimeMarker" href="#TimeMarker">Skyhoshi.App.TimeMarker</a></li>
         </ul>
         <h6>Game Development List</h6>
         <ul class="list-group">
-            <li class="list-group-item list-group-item-action"><a href="#"><span>Unity - <span>Steam Game Slot Picker</span> - "Next Game" Chooser</span></a></li>
-            <li class="list-group-item list-group-item-action"><a href="#"></a></li>
-            <li class="list-group-item list-group-item-action"><a href="#"></a></li>
-            <li class="list-group-item list-group-item-action"><a href="#"></a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-SteamGameSlotMachine" href="#SteamGameSlotMachine"><span>Unity - <span>Steam Game Slot Picker</span> - "Next Game" Chooser</span></a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-TipTopBouncyHop" href="#TipTopBouncyHop">Tip Top Bouncy Hop</a></li>
+            <li class="list-group-item list-group-item-action"><a id="menuItem-SpaceAdventureYYXX" href="#SpaceAdventureYYXX">Space Adventure YYXX</a></li>
+            <!--<li class="list-group-item list-group-item-action"><a id="menuItem-" href="#"></a></li>-->
         </ul>
     </nav>
     <main role="main" class="card-columns">
-        <h1 class="card-header border-success content-success rounded shadow-lg p-3 mb-5 bg-white rounded ">Marcus Kern
-            : Software Development Portfolio</h1>
-        <article class="text m-3">
-            <p>
-                I'm a F.U.N. Guy (Functionally Useful Nerd). <br />
-                I am the Definition of DevOps, I can Create the Automated Deadlock, Install it, put together the
-                computer AND program it to lock you out of your house.<br />
-            </p>
-            <p>
-                I am a software engineer with 9+ years programming and application development experience in the
-                Microsoft stack. Additional programming experience in C++, Cloud services, Linux and MAC OS X, IOS
-                Applications.
-            </p>
+        <article class="card-header border-success shadow-lg p-3 mb-5 bg-white rounded d-inline-flex align-content-end" style="min-height:119px">
+            <section class="content-success border-success d-inline"><h1>Marcus Kern : Software Development Portfolio</h1></section>
+            <section class="m-xl-auto">
+                Theme <button id="switch" onclick="toggleTheme()">Switch</button>
+            </section>
         </article>
-        <article style="display: none;">
-            <details is="expand">
+        <article class="text m-1">
+
+            <section>
+                Thanks for visiting!<br />This site is a portfolio of sorts<sup>1</sup>, it's intended to be used in conjunction with my resume for job applications and "The Hunt" <br /> If you happened upon my site and wish to contact me feel free to drop me a tweet. My twitter is down below.
+            </section>
+            <section class="blockquote-footer">
+                1: Not all my personal or pet projects are listed here,<br />Most of the ones I find inspiring are.<br /> doing so would create an unreadable and misunderstood mess.
+                Some projects are clearly defined (and as such) are displayed here.
+                Where other projects have not been fully "Realized" for example alot of my home automation projects involve small devices which are single projects in of themselves but
+                are so highly customized that "Presenting" them would be confusing and hard to "Define" as the requirements and parts are Frankenstein'd across multiple projects
+                and are highly likely never to be reassembled in the same way. <br />
+                This "lack of repetition" in Home automation projects is only due to shifting requirements of the expected function of the device.
+            </section>
+        </article>
+
+        <article class="text m-3">
+            <details open>
+                <summary>Introduction and Further Information</summary>
+                <p>
+                    I'm a F.U.N. Guy (Functionally Useful Nerd). <br />
+                    I am the Definition of DevOps, I can Create the Automated Deadlock, Install it, put together the
+                    computer AND program it to lock you out of your house.<br />
+                </p>
+                <p>
+                    I am a software engineer with 9+ years programming and application development experience in the
+                    Microsoft stack. Additional programming experience in C++, Cloud services, Linux and MAC OS X, IOS
+                    Applications.
+                </p>
+            </details>
+        </article>
+        <article id="PortfolioInformation" class="text m-3">
+            <details open>
                 <summary>Project Info</summary>
                 <section>
-
+                    <p>Below is a list of past and current projects in two categories, Software Projects and Game Development Projects. </p>
+                    <p>
+                        <span class="text-capitalize text-info text-primary">NOTE:</span> This is NOT a complete list. <br />
+                        I'm currently working on updating this list for 2017-2019 including some missing projects from 2019 to the present.
+                    </p>
+                    <p>Inclusion in this list does not imply a finished product nor does it mean the code is public / Open Source.<br /> If code is public, a Github URL or Azure DevOps URL will be provided.</p>
+                </section>
+                <section>
+                    You can find me on most services under the name Skyhoshi, Sky, or Skyten.
+                    I'm working to add a complete list of links to the primary services I use. but for start here's just a couple
+                    <ul>
+                        <li><a href="https://twitter.com/skyhoshi">https://twitter.com/skyhoshi</a></li>
+                        <li><a href="https://github.com/skyhoshi">https://github.com/skyhoshi</a></li>
+                        <li><a href="https://twitch.tv/skyhoshi">https://twitch.tv/skyhoshi</a></li>
+                    </ul>
                 </section>
             </details>
         </article>
         <article id="SoftwareDevProjects">
             <h3>Software Projects</h3>
             <details id="SecretCache" data-shortName="SecretCache" role="doc-chapter" class="card">
-                <summary class="card-header"><a role="link" id="SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a>
+                <summary class="card-header">
+                    <a role="link" id="SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a>
                 </summary>
                 <section class="card-body p-2">
                     <h4>Links</h4>
@@ -99,8 +258,10 @@
                 </section>
                 <section class="card-body">
                     <h3>Project Description</h3>
-                    <p>Az.KeyVault Interface that allows you to cache results encrypted in Global session or local
-                        session (Set By Global Variable)</p>
+                    <p>
+                        Az.KeyVault Interface that allows you to cache results encrypted in Global session or local
+                        session (Set By Global Variable)
+                    </p>
                 </section>
             </details>
             <details id="ConfigurationManager" data-shortName="ConfigurationManager" role="doc-chapter" class="card">
@@ -108,47 +269,58 @@
                 <section class="card-body p-2">
                     <h4>Links</h4>
                     <ul class="list-group m-1">
-                        <li class="list-group-item">Source: <a target="_blank" href="https://www.github.com/skyhoshi/ConfigManager-Keepass">https://www.github.com/skyhoshi/ConfigManager-Keepass</a>
+                        <li class="list-group-item">
+                            Source: <a target="_blank" href="https://www.github.com/skyhoshi/ConfigManager-Keepass">https://www.github.com/skyhoshi/ConfigManager-Keepass</a>
                         </li>
                         <li class="list-group-item">Additional Information: <a target="_blank" href="https://keepass.info">https://keepass.info</a></li>
                     </ul>
                 </section>
                 <section class="card-body">
                     <h3>Project Description</h3>
-                    <p>This Library represents early work on secrets management. It uses a keepass database as a secure
-                        store, (visit https://keepass.info for more information) </p>
-                    <p>The concept is a simple case of secret storage and programmatic access, you create a Keepass
+                    <p>
+                        This Library represents early work on secrets management. It uses a keepass database as a secure
+                        store, (visit https://keepass.info for more information)
+                    </p>
+                    <p>
+                        The concept is a simple case of secret storage and programmatic access, you create a Keepass
                         Database, store User/Application/System Secrets as entities within the database which can
                         include
                         nearly limitless amounts of additional data. (Limited by 3 things, One: File size (Load Time),
                         Two:
                         Storage Available, and Three: Search Method(s) Conditions) The application uses the search
                         function
-                        built into the library to find the entities by name.</p>
-                    <p>My Customization allows you to call the configuration object like you’re used to. This returns
+                        built into the library to find the entities by name.
+                    </p>
+                    <p>
+                        My Customization allows you to call the configuration object like you’re used to. This returns
                         the
                         string object that is stored in the keepass database. If it’s not found in the keepass database
                         it
-                        will look to local configuration files and storage methods included.</p>
+                        will look to local configuration files and storage methods included.
+                    </p>
                     <p>
                         <code>var SettingValue = Configuration.AppSetting[SettingsName]</code><br />
                     </p>
-                    <p>The next version of the project has plans to implement the Microsoft.Extensions.Configuration
+                    <p>
+                        The next version of the project has plans to implement the Microsoft.Extensions.Configuration
                         library
                         and allow loading and consumption of enumerated lists of settings files and locations, the
                         keepass
-                        database will be included in that list. </p>
+                        database will be included in that list.
+                    </p>
                 </section>
             </details>
             <details id="FaceRecognition" data-shortName="FaceRecognition" role="doc-chapter" class="card">
-                <summary class="card-header"><a role="link" id="FaceRecognition">Face Recognition - In Dot Net</a>
-                </summary>
+                <a role="link" id="FaceRecognition" hidden></a>
+                <summary class="card-header">Face Recognition - In Dot Net</summary>
                 <section class="card-body p-2">
                     <h4>Links</h4>
                     <ul class="list-group m-1">
-                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/FaceRecog-LiveCoding">https://github.com/skyhoshi/FaceRecog-LiveCoding</a>
+                        <li class="list-group-item">
+                            Source: <a target="_blank" href="https://github.com/skyhoshi/FaceRecog-LiveCoding">https://github.com/skyhoshi/FaceRecog-LiveCoding</a>
                         </li>
-                        <li class="list-group-item">Additional Information: <a target="_blank" href="https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app">https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app</a>
+                        <li class="list-group-item">
+                            Additional Information: <a target="_blank" href="https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app">https://www.education-ecosystem.com/skyhoshi/lNbDO-how-to-integrate-facial-recognition-into-any-dotnet-app</a>
                         </li>
                     </ul>
                 </section>
@@ -173,42 +345,53 @@
                 </section>
             </details>
             <details id="Webhook" data-shortName="Webhook" role="doc-chapter" class="card">
-                <summary class="card-header"><a role="link" id="Webhook">Webhook Consumption and Response website</a>
+                <summary class="card-header">
+                    <a role="link" id="Webhook">Webhook Consumption and Response website</a>
                 </summary>
                 <section class="card-body p-2">
                     <h4>Links</h4>
                     <ul class="list-group m-1">
-                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/WebhookCap">https://github.com/skyhoshi/WebhookCap</a>
+                        <li class="list-group-item">
+                            Source: <a target="_blank" href="https://github.com/skyhoshi/WebhookCap">https://github.com/skyhoshi/WebhookCap</a>
                         </li>
                         <!-- <li class="list-group-item">Additional Information: <a target="_blank" href=""></a></li> -->
                     </ul>
                 </section>
                 <section class="card-body p-2">
                     <h3>Project Description</h3>
-                    <p>This has been one of my latest development projects as of October 2020. This simple application
-                        has a UI Interface that has several features.</p>
+                    <p>
+                        This has been one of my latest development projects as of October 2020. This simple application
+                        has a UI Interface that has several features.
+                    </p>
                 </section>
             </details>
             <details id="VHDXAutomation" data-shortName="VHDXAutomation" role="doc-chapter" class="card">
-                <summary class="card-header"><a role="link" id="VHDXAutomation">Installation Displacement Powershell
-                        Module</a></summary>
+                <summary class="card-header">
+                    <a role="link" id="VHDXAutomation">
+                        Installation Displacement Powershell
+                        Module
+                    </a>
+                </summary>
                 <section class="card-body p-2">
                     <h4>Links</h4>
                     <ul class="list-group m-1">
-                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/VHDXToFolders">https://github.com/skyhoshi/VHDXToFolders</a>
+                        <li class="list-group-item">
+                            Source: <a target="_blank" href="https://github.com/skyhoshi/VHDXToFolders">https://github.com/skyhoshi/VHDXToFolders</a>
                         </li>
-                        <li class="list-group-item">Project Outline and additional information: <a target="_blank" href="https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965">https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965</a>
+                        <li class="list-group-item">
+                            Project Outline and additional information: <a target="_blank" href="https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965">https://gist.github.com/skyhoshi/dab7d6d3812428dbf5bb652c6c00b965</a>
                         </li>
                     </ul>
                 </section>
                 <section class="card-body p-2">
                     <h3>Project Description</h3>
-                    <p>Development started in DiskPart Settings Text Files and now PowerShell 7 is used to manage all
+                    <p>
+                        Development started in DiskPart Settings Text Files and now PowerShell 7 is used to manage all
                         the things that
                         Diskpart and a settings file would do. PowerShell 7 is required.
                     </p>
                     <p>
-                    <h5>The TLDWTR (Too Long and don’t want to read) Version:</h5>
+                        <h5>The TLDWTR (Too Long and don’t want to read) Version:</h5>
                     </p>
                     <p>
                         Concept is to displace application files from a higher performing hard drive to a lesser one.
@@ -217,9 +400,10 @@
                         using a Symbolic
                         Link (Junction) and move the VHDx Around as needed to better manage storage and performance
                         rather than
-                        uninstalling and reinstalling applications.</p>
+                        uninstalling and reinstalling applications.
+                    </p>
                     <p>
-                    <h6>History of the Project:</h6>
+                        <h6>History of the Project:</h6>
                     </p>
                     <p>
                         This project was one of necessity. After 20+ years of collecting, developing and
@@ -228,15 +412,17 @@
                         Machines. Virtual
                         Hard drives became a standard in storing a lot of “Shared” data. I had virtual hard drives that
                         I would attach
-                        and detach from virtual machines to do maintenance and installations. </p>
+                        and detach from virtual machines to do maintenance and installations.
+                    </p>
                     <p>
                         A few years ago with the introduction of Windows 10, Hyper-V and Hyper-V PowerShell Module I was
                         able to script
                         out the creation of Virtual Hard Drives and took the concept of sharing one step further by
                         attaching these
-                        drives to folders (Folder Mounting). </p>
+                        drives to folders (Folder Mounting).
+                    </p>
                     <p>
-                    <h6>Theories and Practice:</h6>
+                        <h6>Theories and Practice:</h6>
                     </p>
                     <p>
                         With this I could in theory, install games onto to my SSD drive but when I wasn’t playing the
@@ -244,7 +430,8 @@
                         additional space on the then limited space of my SSD I could dismount and displace the VHD to a
                         Cold storage
                         Spindle based drive (lesser performing drive) or even push the drive up to network storage for
-                        archiving. </p>
+                        archiving.
+                    </p>
                     <p>
                         I took the theory one step further when I started working for GiftCertificates.com and used the
                         virtual hard
@@ -252,16 +439,18 @@
                         development performance
                         and time spent between different projects all while managing the space, and what was presented
                         to me at any
-                        given time in the work environment. </p>
+                        given time in the work environment.
+                    </p>
                     <p>
-                    <h6>Passing on the concept: </h6>
+                        <h6>Passing on the concept: </h6>
                     </p>
                     <p>
                         I’ve taken my time to convert the large group of scripts and methods down to a concise and
                         simple PowerShell
                         Module that will allow you to take a given folder on your system with a virtual hard drive that
                         is mounted to
-                        the folder but is stored separately. </p>
+                        the folder but is stored separately.
+                    </p>
                     <p>
                         Currently the project is unfinished, but the base scripts needed to mount existing virtual hard
                         drives at
@@ -284,16 +473,20 @@
                 <section class="card-body p-2">
                     <h4>Links</h4>
                     <ul class="list-group m-1">
-                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/winget-cli">https://github.com/skyhoshi/winget-cli</a>
+                        <li class="list-group-item">
+                            Source: <a target="_blank" href="https://github.com/skyhoshi/winget-cli">https://github.com/skyhoshi/winget-cli</a>
                         </li>
-                        <li class="list-group-item">Additional Information: <a target="_blank" href="https://github.com/microsoft/winget-cli/pull/503">https://github.com/microsoft/winget-cli/pull/503</a>
+                        <li class="list-group-item">
+                            Additional Information: <a target="_blank" href="https://github.com/microsoft/winget-cli/pull/503">https://github.com/microsoft/winget-cli/pull/503</a>
                         </li>
                     </ul>
                 </section>
                 <section class="card-body p-2">
                     <h3>Project Description</h3>
-                    <p>I was attempting to add a feature [its currently incomplete] demonstrates ability to expand and
-                        conform to lesser known or weaker strength languages and architectures.</p>
+                    <p>
+                        I was attempting to add a feature [its currently incomplete] demonstrates ability to expand and
+                        conform to lesser known or weaker strength languages and architectures.
+                    </p>
                 </section>
             </details>
             <details id="TimeMarker" data-shortName="TimeMarker" role="doc-chapter" class="card">
@@ -301,26 +494,120 @@
                 <section class="card-body p-2">
                     <h4>Links</h4>
                     <ul class="list-group m-1">
-                        <li class="list-group-item">Source: <a target="_blank" href="https://github.com/skyhoshi/TimeMarker">https://github.com/skyhoshi/TimeMarker</a>
+                        <li class="list-group-item">
+                            Source: <a target="_blank" href="https://github.com/skyhoshi/TimeMarker">https://github.com/skyhoshi/TimeMarker</a>
                         </li>
                     </ul>
                 </section>
                 <section class="card-body p-2">
                     <h3>Project Description</h3>
-                    <p>An Application I developed to allow someone to use shortcut keys (HotKeys) to record timestamps
+                    <p>
+                        An Application I developed to allow someone to use shortcut keys (HotKeys) to record timestamps
                     </p>
                 </section>
             </details>
         </article>
         <article id="GameDevProjects">
             <h3>Game Dev Projects</h3>
-            <details>
+            <details id="SteamGameSlotMachine" class="card">
                 <summary class="card-header"><span>Unity - <span>Steam Game Slot Picker</span> - "Next Game" Chooser</span></summary>
+                <pre>The name keeps changing, the primary function / intention is set.</pre>
+                <details>
+                    <summary>Links</summary>
+                    <section>
+                        Comming soon.
+                    </section>
+                </details>
+                <section>
+                    <p>
+                        This Application built in C# and Unity is designed to generate a database of all currently installed Steam Games.
+                        Once compiled the game's steam cached images are used as items for matching in a "Slot Machine".
+                        When the Slot machine is activated the dials spin with the images of the games on the dials and upon match the "Player" is then intended to start that game.
+                    </p>
+                    <p>
+                        The current design is intended to work with Only Already "Downloaded" games, that is games that the "Player" has used the steam client to "Install" but may not have "Run/Played" the game.
+                        in other words, the game's inclusion is not dependent whether the game has been run or not, only installed.
+                        This may mean that additional installation steps may be required in order to play the game.
+                    </p>
+                </section>
+            </details>
+            <details id="SpaceAdventureYYXX" class="card">
+                <summary class="card-header">Space Adventure YYXX</summary>
+                <section>
+                    This game is to be an advanced shoot'um up (shump) with a dynamic enemy AI, customizeable loadouts and on the fly systems alterations that provide the gamer a unique playthrough of each level depending on the player's loadout.
+                </section>
+                <section>
+                    Example:<br />
+                    When a player chooses guns with a fast firing rate and minimal power to a ship with high(strong) shields, enemies will have low shields and strong guns to break down the player's shields.
+                    This is done by calculating attributes of the weapons system loadout and adjusting the enemies loadout, entry points and
+                </section>
+                <section>
+                    Inspiration comes from several famous shump's some of which i've listed here.
+                    <ul>
+                        <li>Rapter Call of the Shadows</li>
+                        <li>Radien (Multiple games in the series)</li>
+                    </ul>
+                </section>
             </details>
         </article>
     </main>
 
+    <script>
+        window.onload = function () {
+            //Theme On Initial Load
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
 
+            //Software Section
+            document.getElementById("menuItem-SecretCache").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-SecretCache"));
+            }
+            document.getElementById("menuItem-ConfigurationManager").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-ConfigurationManager"));
+            }
+            document.getElementById("menuItem-FaceRecognition").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-FaceRecognition"));
+            }
+            document.getElementById("menuItem-Webhook").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-Webhook"));
+            }
+            document.getElementById("menuItem-VHDXAutomation").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-VHDXAutomation"));
+            }
+            document.getElementById("menuItem-TimeMarker").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-TimeMarker"));
+            }
+            //Game Section
+            document.getElementById("menuItem-SteamGameSlotMachine").onclick = function () {
+                openSectionOnNavigate(document.getElementById("menuItem-SteamGameSlotMachine"));
+            }
+        }
+        function openSectionOnNavigate(elementClicked) {
+            //console.log("OpenSectionOnNavigate has been clicked");
+            //console.log(elementClicked);
+            var hrefValue = elementClicked.attributes.getNamedItem("href").value;
+            //console.log(hrefValue);
+            var elementIdToOpen = hrefValue.substring(1, hrefValue.length);
+            //console.log(elementIdToOpen);
+            document.getElementById(elementIdToOpen).setAttribute("open", "open");
+        }
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+    </script>
 </body>
 
 </html>
