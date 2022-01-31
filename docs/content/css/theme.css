@@ -1,0 +1,65 @@
+.theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --background-color: #FFFFFF;
+    --background-accent-color: #e0e0e0;
+    --color-accent: #f0f0f0;
+    --font-color: #000000;
+    --btn-font-color: #FFFFFF
+}
+
+.theme-dark {
+    /*--color-primary: #17ed90;*/
+    --color-primary: #243133;
+    --color-secondary: #243133;
+    --background-color: #242433;
+    --background-accent-color: #7799ff;
+    --background-accent-color: #303030;
+    --color-accent: #12cdea;
+    --color-accent: #242424;
+    --font-color: #ffffff;
+    --btn-font-color: #FFFFFF
+}
+
+#switch {
+    /**/
+    color: var(--btn-font-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+details {
+    background-color: var(--background-color);
+}
+
+details summary {
+    background-color: var(--color-secondary);
+}
+
+/*:hover {
+    background-color: var(--background-accent-color);
+}*/
+.list-group-item-action:hover {
+    background-color: var(--background-accent-color);
+}
+
+
+/*.card {
+    background-color: var(--color-accent) !important;
+}*/
+
+.card-header {
+    background-color: var(--color-secondary) !important;
+}
+.card-body {
+    background-color: var(--color-secondary) !important;
+}
+.list-group-item {
+    background-color: var(--color-accent);
+}

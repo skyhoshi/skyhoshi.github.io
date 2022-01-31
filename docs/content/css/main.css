@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex: content;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: max-content;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+summary {
+    font-size: xx-large;
+}
+
+    summary::marker {
+        content: "§ ";
+        padding-right: 4px;
+    }
+
+#GameDevProjects > details > details > summary {
+    font-size: initial;
+}
+
+#ProjectName {
+    font-size: larger;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
