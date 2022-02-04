@@ -36,3 +36,11 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+#chart-c9f02337-f428-4aa8-a500-d39d678701c1 .graph {
+    fill: #ffffff;
+}
+#chart-c9f02337-f428-4aa8-a500-d39d678701c1 .color-0, #chart-c9f02337-f428-4aa8-a500-d39d678701c1 .color-0 a:visited {
+    stroke: #000000;
+    fill: #0060df;
+}

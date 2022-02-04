@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="theme-light">
+
 <head>
 
     <meta charset="UTF-8">
@@ -16,7 +17,7 @@
         <header class="card-header text-success alert-success bg-white">
             <h4 class="text-center">Skyhoshi<br />AKA<br />Marcus Kern</h4>
         </header>
-        <h6>Software Project List</h6>        
+        <h6>Software Project List</h6>
         <ul class="list-group">
             <li class="list-group-item list-group-item-action"><a id="menuItem-SecretCache" href="#SecretCache"><span>PowerShell - <span id="ProjectName">Secret Cache</span> - Azure KeyVault Local Cache Manager</span></a></li>
             <li class="list-group-item list-group-item-action"><a id="menuItem-ConfigurationManager" href="#ConfigurationManager">Configuration Manager - KeePass database storage</a></li>
@@ -36,7 +37,9 @@
     </nav>
     <main role="main" class="">
         <article class="card-header border-success shadow-lg p-3 mb-5 bg-white rounded d-inline-flex align-content-end" style="min-height:119px">
-            <section class="content-success border-success d-inline"><h1>Marcus Kern : Software Development Portfolio</h1></section>
+            <section class="content-success border-success d-inline">
+                <h1>Marcus Kern : Software Development Portfolio</h1>
+            </section>
             <section class="m-xl-auto" style="">
                 Theme <button id="switch" onclick="toggleTheme()">Switch</button>
             </section>
@@ -70,6 +73,9 @@
                     Applications.
                 </p>
             </details>
+        </article>
+        <article id="wakaTime" class="text m-3">
+            <figure style="max-width:1000px;"><embed src="https://wakatime.com/share/@Skyhoshi/3400c4cd-1546-47fa-bb58-534d8f69e68a.svg"></embed></figure>
         </article>
         <article id="PortfolioInformation" class="text m-3">
             <details open>
@@ -241,7 +247,7 @@
                         Diskpart and a settings file would do. PowerShell 7 is required.
                     </p>
                     <p>
-                        <h5>The TLDWTR (Too Long and don’t want to read) Version:</h5>
+                    <h5>The TLDWTR (Too Long and don’t want to read) Version:</h5>
                     </p>
                     <p>
                         Concept is to displace application files from a higher performing hard drive to a lesser one.
@@ -253,7 +259,7 @@
                         uninstalling and reinstalling applications.
                     </p>
                     <p>
-                        <h6>History of the Project:</h6>
+                    <h6>History of the Project:</h6>
                     </p>
                     <p>
                         This project was one of necessity. After 20+ years of collecting, developing and
@@ -272,7 +278,7 @@
                         drives to folders (Folder Mounting).
                     </p>
                     <p>
-                        <h6>Theories and Practice:</h6>
+                    <h6>Theories and Practice:</h6>
                     </p>
                     <p>
                         With this I could in theory, install games onto to my SSD drive but when I wasn’t playing the
@@ -292,7 +298,7 @@
                         given time in the work environment.
                     </p>
                     <p>
-                        <h6>Passing on the concept: </h6>
+                    <h6>Passing on the concept: </h6>
                     </p>
                     <p>
                         I’ve taken my time to convert the large group of scripts and methods down to a concise and
@@ -434,6 +440,9 @@
             document.getElementById("menuItem-SteamGameSlotMachine").onclick = function () {
                 openSectionOnNavigate(document.getElementById("menuItem-SteamGameSlotMachine"));
             }
+            var time = "#chart-c9f02337-f428-4aa8-a500-d39d678701c1 > title";
+            document.body.children.item(1).children.item(3).children.item(0).children.item(0);
+            var waka = document.getElementById('wakaTime');
         }
         function openSectionOnNavigate(elementClicked) {
             //console.log("OpenSectionOnNavigate has been clicked");
@@ -456,6 +465,15 @@
             } else {
                 setTheme('theme-dark');
             }
+        }
+
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("wakaTime").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "https://wakatime.com/share/@Skyhoshi/e68ef619-cf18-44b1-80e2-e8432d7620ea.svg", true);
+            xhttp.send();
         }
     </script>
 </body>
